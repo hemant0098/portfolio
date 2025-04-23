@@ -1,0 +1,89 @@
+.about {
+  padding: 80px 20px;
+  background: #121212;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #00ffe7, #00c6ff, #ff00c8);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -500px; }
+  100% { background-position: 500px; }
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-image-wrapper {
+  perspective: 800px;
+}
+
+.about-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 15px 30px rgba(0,255,255,0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-image:hover {
+  transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 25px 50px rgba(255,0,255,0.5);
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.skills {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.skill-badge {
+  padding: 6px 12px;
+  background: #1e1e1e;
+  border: 2px solid #00ffe7;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: default;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: translateY(-3px) scale(1.05);
+  background: #00ffe7;
+  color: #121212;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .skills {
+    justify-content: center;
+  }
+}

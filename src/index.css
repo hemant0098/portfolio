@@ -1,0 +1,14 @@
+/* index.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  color: purple;
+  font-size: 3rem;
+  margin-top: 100px;
+}
