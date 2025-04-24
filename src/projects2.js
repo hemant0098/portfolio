@@ -6,7 +6,7 @@ function Projects() {
     <section className="projects" id="projects">
       <h2 className="section-title">My Projects</h2>
       <div className="project-grid">
-        <div className="project-card neon-glow">
+        <div className="project-card neon-glow" onClick={()=>window.location.href="https://hemant0098.github.io/vote_app"}>
           <h3>Voting App</h3>
           <p>A secure online voting platform.</p>
         </div>
